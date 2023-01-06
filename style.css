@@ -1,0 +1,211 @@
+@import url(https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@300&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap);
+@import url(images/image-product-mobile.jpg);
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f3eae3;
+}
+
+.container{
+    display: flex;
+    margin: 5%;
+    justify-content: center;
+    padding: 0;
+}
+.boxContainer{
+    position: relative;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px #615b5785;
+    height: 480px;
+    overflow: hidden;
+}
+
+.contentContainer {
+    width: 317px;
+    display: flex;
+    background-color: white;
+    order: 2;
+    overflow: hidden;
+}
+.text{
+    text-align: center;
+    padding: 30px;
+    position: static;
+}
+
+h1{
+    color: #1b2026;
+    font-size: 30px;
+    max-width: 200px;
+    text-align: left;
+    font-family: 'Fraunces', serif;
+    margin-top: 10px;
+    padding: 5px;
+    font-weight: bolder;
+}
+h2{
+    color: #a9acb5;
+    font-size: 15px;
+    max-width: 250px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    margin-top: 10px;
+    padding: 5px;
+    font-weight: 600;
+    line-height: 24px;
+}
+h3{
+    color: #a9acb5;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 12px;
+    letter-spacing: 5px;
+    text-align: left;
+    margin-top: 10px;
+    padding: 5px;
+}
+#value1{
+    font-size: 35px;
+    color: #3d8168;
+    font-weight: bolder;
+    display: inline-flex;
+    float: left;
+    font-family: 'Fraunces', serif;
+    margin-top: 10px;
+}
+#value2{
+    color: #a9acb5;
+    transform: translateY(-4px);
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    text-decoration: line-through;
+}
+button{
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #3d8168;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    background-image: url(images/icon-cart.svg);
+    background-repeat: no-repeat;
+    background-position-x: 25%;
+    background-position-y: 50%;
+    background-size: 15px;
+}
+button:hover{
+    background-color: #1e4d3c;
+    color: white;
+    cursor: pointer;
+}
+button:active{
+    color: #718f84;
+}
+
+
+
+@media screen and (max-width: 703px){
+    .boxContainer{
+        height: 560px;
+        position: relative;
+        flex-flow: column nowrap;
+        border-radius: 10px;
+        box-shadow: 0px 0px 6px #615b5785;
+        overflow: hidden;
+    }
+    #picture{
+        height: 200px;
+        transform: translate(0px, -105px);
+
+    }
+    .contentContainer {
+        width: 320px;
+        display: flex;
+        background-color: white;
+        position: relative;
+        transform: translate(0px, 30px);
+    }
+    .text{
+        text-align: center;
+        padding: 30px;
+        position: static;
+    }
+    
+    h1{
+        color: #1b2026;
+        font-size: 28px;
+        max-width: 250px;
+        text-align: left;
+        font-family: 'Fraunces', serif;
+        margin-top: 0px;
+        padding: 5px;
+        font-weight: bolder;
+    }
+    h2{
+        color: #a9acb5;
+        font-size: 12px;
+        max-width: 245px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: left;
+        margin-top: 3px;
+        font-weight: 600;
+        line-height: 20px;
+    }
+    h3{
+        color: #a9acb5;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: lighter;
+        font-size: 10px;
+        letter-spacing: 5px;
+        text-align: left;
+        margin-top: -10px;
+        padding: 5px;
+    }
+    #value1{
+        font-size: 35px;
+        color: #3d8168;
+        font-weight: bolder;
+        display: inline-flex;
+        float: left;
+        font-family: 'Fraunces', serif;
+        margin-top: 10px;
+    }
+    #value2{
+        color: #a9acb5;
+        transform: translateY(-4px);
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 10px;
+        text-decoration: line-through;
+    }
+    button{
+        width: 100%;
+        height: 45px;
+        transform: translateY(-20px);
+        border-radius: 10px;
+        border: none;
+        background-color: #3d8168;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bolder;
+        background-image: url(images/icon-cart.svg);
+        background-repeat: no-repeat;
+        background-position-x: 25%;
+        background-position-y: 50%;
+        background-size: 15px;
+    }
+    button:hover{
+        background-color: #1e4d3c;
+        color: white;
+        cursor: pointer;
+    }
+    button:active{
+        color: #718f84;
+    }
+}
